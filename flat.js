@@ -1,4 +1,5 @@
 function calculateFlatLoan() {
+    console.log('test')
     var loanAmount = parseFloat(document.getElementById("loanAmount").value.replace(/[^\d]/g, '').toString());
     var interestRate = parseFloat(document.getElementById("interestRate").value);
     var loanTerm = parseInt(document.getElementById("loanTerm").value);
@@ -13,6 +14,7 @@ function calculateFlatLoan() {
 }
 
 function displayFlatResult(monthlyPayment, principalPayment, interestPayment, sisa) {
+    console.log('test2')
     var resultDiv = document.getElementById("result");
     var tableContent = "<div class='table-responsive'>";
     tableContent += "<table class='table'><thead><tr><th>Bulan</th><th>Angsuran Pokok</th><th>Bunga</th><th>Total Angsuran</th><th>Sisa Pinjaman</th></tr></thead><tbody>";

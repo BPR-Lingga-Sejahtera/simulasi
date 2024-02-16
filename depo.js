@@ -2,10 +2,10 @@ function calculateDepo() {
     var jumlahStoran = parseFloat(document.getElementById("jumlahStoran").value.replace(/[^\d]/g, '').toString());
     var sukuBungaDepo = parseFloat(document.getElementById("sukuBungaDepo").value);
 
-    displayFlatResult(sukuBungaDepo, jumlahStoran);
+    displayDepoResult(sukuBungaDepo, jumlahStoran);
 }
 
-function displayFlatResult(sukuBungaDepo, jumlahStoran) {
+function displayDepoResult(sukuBungaDepo, jumlahStoran) {
     var resultDiv = document.getElementById("depo");
     var tableContent = "<div class='table-responsive'>";
     tableContent += "<table class='table'><tbody>";
