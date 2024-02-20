@@ -30,7 +30,23 @@
             </div>
             <div id="body-page">
                 <div id="kredit">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                Pilih Metode Perhitungan Bunga
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nav-item w-100 text-center active-nav" id="nav-flat">
+                                        Flat
+                                    </div>
+                                    |
+                                    <div class="nav-item w-100 text-center" id="nav-efektif">
+                                        Efektif
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <form class="mt-2">
+                        <input type="hidden" id="metode" value="flat">
                         <div class="mb-1">
                             <label for="loanAmount">Jumlah Pinjaman</label>
                             <input type="text" class="form-control form-control-sm" id="loanAmount" placeholder="Masukan jumlah pinjaman">

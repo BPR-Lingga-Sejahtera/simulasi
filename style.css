@@ -54,3 +54,29 @@ label {
 table {
     font-size: 11px;
 }
+
+.card {
+    /* opacity: 0.3; */
+    background: rgba(76, 175, 80, 0.3);
+    border: 2px solid #fff;
+}
+
+hr {
+    background-color: #fff;
+    height: 2px !important;
+    opacity: 1;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.card-body{
+    color: black;
+}
+
+#kredit .active-nav{
+    color: #00447F;
+    font-size: 18px;
+    font-weight: 900;
+}

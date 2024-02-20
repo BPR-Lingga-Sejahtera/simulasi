@@ -6,5 +6,24 @@ function loadPage(page, none, active, text) {
   $(none).addClass('d-none');
 }
 
-// Load default page on initial load
 loadPage('#kredit', '#deposito', '#nav-kredit', 'Simulasi Kredit');
+
+$('#nav-flat').on('click', function(){
+  $(this).addClass('active-nav');
+  $('#nav-efektif').removeClass('active-nav');
+  $('#metode').val('flat');
+
+  var resultDiv = document.getElementById("result");
+
+  resultDiv.innerHTML = '';
+})
+
+$('#nav-efektif').on('click', function(){
+  $(this).addClass('active-nav');
+  $('#nav-flat').removeClass('active-nav');
+  $('#metode').val('efektif');
+
+  var resultDiv = document.getElementById("result");
+
+  resultDiv.innerHTML = '';
+})
